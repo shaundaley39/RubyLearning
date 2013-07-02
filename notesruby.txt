@@ -13,8 +13,6 @@ Unit testing structure & paths (182)
 
 Environment variables (199)
 
-Internet Stuff (222)
-
 Benchmarking support (636) and Profiling (696) - valgrind for ruby? Or just 10% as cool?
 
 Looks Cool!!!
@@ -33,5 +31,9 @@ Further learning tasks:
 - build an API
 - hit third party APIs
 - build an application that uses sockets
+- validate input (user input, file input, etc)
+- comprehensive unit testing
+- write a web trawler (especially important for Skyscanner discussions, and for generic transit graph generation)
+- integrate with neo4j
+- implement a C extension (289) (perhaps something involving threads? Perhaps something involving rational number computation? Perhaps something involving fourier transform libraries?
 - 
-
