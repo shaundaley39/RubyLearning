@@ -9,9 +9,29 @@ Exceptions - burry in this stuff
 Mixins - best application is in defining interfaces
 Mixin Variable Hashing (144) - for instance specific states without variable clashing
 // fear point: methods hierarchy is class > mixin > superclass > superclass mixins. So any internal method in a mixin should have a name that won't be accidentally overwritten in an including class
+Unit testing structure & paths (182)
+
+Environment variables (199)
+
 Internet Stuff (222)
 
+Benchmarking support (636) and Profiling (696) - valgrind for ruby? Or just 10% as cool?
 
 Looks Cool!!!
 
 Sockets for networking (740)
+
+
+General:
+rdoc all code... explore further
+explore open source licenses and include
+
+
+
+Further learning tasks:
+- build a well documented ruby gem, with a suitable license (for something... any ideas)
+- build an API
+- hit third party APIs
+- build an application that uses sockets
+- 
+
