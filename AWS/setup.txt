@@ -1,0 +1,222 @@
+#install AWS command line tools
+
+wget http://s3.amazonaws.com/ec2-downloads/ec2-api-tools.zip
+unzip ec2-api-tools.zip
+cd ec2-api-tools-1.6.7.4/bin/																	#version needs to be flex here - will change
+
+
+#test
+./ec2-describe-images ami-ca1f4f8f
+""" ./bin/ec2-describe-images: line 9: EC2_HOME: EC2_HOME is not set """
+
+
+# Set environment variables
+export EC2_HOME=/home/ubuntu/ec2-api-tools-1.6.7.4/
+./ec2-api-tools-1.6.7.4/bin/ec2-version
+
+
+
+shaun@debian:~/ec2-api-tools-1.6.7.4/bin$ export EC2_HOME=/home/ubuntu/ec2-api-tools-1.6.7.4/
+
+
+
+shaun@debian:~/ec2-api-tools-1.6.7.4/bin$ ./ec2
+Display all 318 possibilities? (y or n)
+ec2-activate-license                       ec2-delete-internet-gateway                ec2drio
+ec2actlic                                  ec2-delete-keypair                         ec2drp
+ec2addcgw                                  ec2-delete-network-acl                     ec2drtb
+ec2adddopt                                 ec2-delete-network-acl-entry               ec2dsds
+ec2-add-group                              ec2-delete-network-interface               ec2dsir
+ec2addgrp                                  ec2-delete-placement-group                 ec2dsnap
+ec2addigw                                  ec2-delete-route                           ec2dsnapatt
+ec2addixt                                  ec2-delete-route-table                     ec2dsph
+ec2addkey                                  ec2-delete-snapshot                        ec2dsubnet
+ec2-add-keypair                            ec2-delete-spot-datafeed-subscription      ec2dtag
+ec2addnacl                                 ec2-delete-subnet                          ec2dva
+ec2addnae                                  ec2-delete-tags                            ec2dvcr
+ec2addnic                                  ec2-delete-volume                          ec2dvgw
+ec2addpgrp                                 ec2-delete-vpc                             ec2dvol
+ec2addrt                                   ec2-delete-vpn-connection                  ec2dvolatt
+ec2addrtb                                  ec2-delete-vpn-connection-route            ec2dvpc
+ec2addsds                                  ec2-delete-vpn-gateway                     ec2dvpn
+ec2addsnap                                 ec2delgrp                                  ec2dvs
+ec2addsubnet                               ec2deligw                                  ec2dxt
+ec2addtag                                  ec2delkey                                  ec2-enable-vgw-route-propagation
+ec2addvgw                                  ec2delnacl                                 ec2-enable-volume-io
+ec2addvol                                  ec2delnae                                  ec2erp
+ec2addvpc                                  ec2delnic                                  ec2evio
+ec2addvpn                                  ec2delpgrp                                 ec2-fingerprint-key
+ec2allocaddr                               ec2delrt                                   ec2fp
+ec2-allocate-address                       ec2delrtb                                  ec2gcons
+ec2apip                                    ec2delsds                                  ec2-get-console-output
+ec2-assign-private-ip-addresses            ec2delsnap                                 ec2-get-password
+ec2assocaddr                               ec2delsubnet                               ec2gpass
+ec2assocdopt                               ec2deltag                                  ec2ii
+ec2-associate-address                      ec2delvgw                                  ec2iin
+ec2-associate-dhcp-options                 ec2delvol                                  ec2ikey
+ec2-associate-route-table                  ec2delvpc                                  ec2-import-instance
+ec2assocrtb                                ec2delvpn                                  ec2-import-keypair
+ec2-attach-internet-gateway                ec2dereg                                   ec2-import-volume
+ec2-attach-network-interface               ec2-deregister                             ec2iv
+ec2-attach-volume                          ec2-describe-account-attributes            ec2ivol
+ec2-attach-vpn-gateway                     ec2-describe-addresses                     ec2kill
+ec2attigw                                  ec2-describe-availability-zones            ec2matt
+ec2attnic                                  ec2-describe-bundle-tasks                  ec2miatt
+ec2attvgw                                  ec2-describe-conversion-tasks              ec2-migrate-image
+ec2attvol                                  ec2-describe-customer-gateways             ec2mim
+ec2auth                                    ec2-describe-dhcp-options                  ec2mimatt
+ec2-authorize                              ec2-describe-export-tasks                  ec2min
+ec2bundle                                  ec2-describe-group                         ec2minatt
+ec2-bundle-instance                        ec2-describe-image-attribute               ec2mnicatt
+ec2-cancel-bundle-task                     ec2-describe-images                        ec2-modify-image-attribute
+ec2-cancel-conversion-task                 ec2-describe-instance-attribute            ec2-modify-instance-attribute
+ec2-cancel-export-task                     ec2-describe-instances                     ec2-modify-network-interface-attribute
+ec2-cancel-reserved-instances-listing      ec2-describe-instance-status               ec2-modify-snapshot-attribute
+ec2-cancel-spot-instance-requests          ec2-describe-internet-gateways             ec2-modify-volume-attribute
+ec2caril                                   ec2-describe-keypairs                      ec2-modify-vpc-attribute
+ec2cbun                                    ec2-describe-licenses                      ec2-monitor-instances
+ec2cct                                     ec2-describe-network-acls                  ec2msnapatt
+ec2cim                                     ec2-describe-network-interface-attribute   ec2mva
+ec2-cmd                                    ec2-describe-network-interfaces            ec2mvolatt
+ec2-confirm-product-instance               ec2-describe-placement-groups              ec2prio
+ec2-copy-image                             ec2-describe-regions                       ec2-purchase-reserved-instances-offering
+ec2-copy-snapshot                          ec2-describe-reserved-instances            ec2ratt
+ec2cpi                                     ec2-describe-reserved-instances-listings   ec2reboot
+ec2cpimg                                   ec2-describe-reserved-instances-offerings  ec2-reboot-instances
+ec2cpsnap                                  ec2-describe-route-tables                  ec2reg
+ec2-create-customer-gateway                ec2-describe-snapshot-attribute            ec2-register
+ec2-create-dhcp-options                    ec2-describe-snapshots                     ec2reladdr
+ec2-create-group                           ec2-describe-spot-datafeed-subscription    ec2-release-address
+ec2-create-image                           ec2-describe-spot-instance-requests        ec2rep
+ec2-create-instance-export-task            ec2-describe-spot-price-history            ec2-replace-network-acl-association
+ec2-create-internet-gateway                ec2-describe-subnets                       ec2-replace-network-acl-entry
+ec2-create-keypair                         ec2-describe-tags                          ec2-replace-route
+ec2-create-network-acl                     ec2-describe-volume-attribute              ec2-replace-route-table-association
+ec2-create-network-acl-entry               ec2-describe-volumes                       ec2repnaclassoc
+ec2-create-network-interface               ec2-describe-volume-status                 ec2repnae
+ec2-create-placement-group                 ec2-describe-vpc-attribute                 ec2-report-instance-status
+ec2-create-reserved-instances-listing      ec2-describe-vpcs                          ec2reprt
+ec2-create-route                           ec2-describe-vpn-connections               ec2reprtbassoc
+ec2-create-route-table                     ec2-describe-vpn-gateways                  ec2-request-spot-instances
+ec2-create-snapshot                        ec2-detach-internet-gateway                ec2-reset-image-attribute
+ec2-create-spot-datafeed-subscription      ec2-detach-network-interface               ec2-reset-instance-attribute
+ec2-create-subnet                          ec2-detach-volume                          ec2-reset-network-interface-attribute
+ec2-create-tags                            ec2-detach-vpn-gateway                     ec2-reset-snapshot-attribute
+--More--                                               ^C
+
+
+
+
+shaun@debian:~/ec2-api-tools-1.6.7.4/bin$ ls ~/ec2-api-tools
+ec2-api-tools-1.6.7.4/ ec2-api-tools.zip      
+shaun@debian:~/ec2-api-tools-1.6.7.4/bin$ ls ~/ec2-api-tools-1.6.7.4/bin/ec2-version
+/home/shaun/ec2-api-tools-1.6.7.4/bin/ec2-version
+shaun@debian:~/ec2-api-tools-1.6.7.4/bin$ export EC2_HOME=/home/shaun/ec2-api-tools-1.6.7.4/
+
+
+shaun@debian:~/ec2-api-tools-1.6.7.4/bin$ ./ec2-version
+/home/shaun/ec2-api-tools-1.6.7.4//bin/ec2-cmd: line 18: JAVA_HOME: JAVA_HOME is not set
+
+
+shaun@debian:~/ec2-api-tools-1.6.7.4/bin$ ls /usr/lib/jvm/
+default-java/                   .java-1.6.0-openjdk-i386.jinfo  java-6-openjdk-i386/            java-7-openjdk-common/          .java-gcj-4.7.jinfo
+java-1.5.0-gcj/                 java-1.7.0-openjdk-i386/        java-6-sun/                     java-7-openjdk-i386/            
+java-1.5.0-gcj-4.7/             .java-1.7.0-openjdk-i386.jinfo  java-6-sun-1.6.0.26/            java-gcj/                       
+java-1.6.0-openjdk-i386/        java-6-openjdk-common/          .java-6-sun.jinfo               java-gcj-4.7/                   
+shaun@debian:~/ec2-api-tools-1.6.7.4/bin$ ls /usr/lib/jvm/java-6-sun
+java-6-sun/          java-6-sun-1.6.0.26/ 
+shaun@debian:~/ec2-api-tools-1.6.7.4/bin$ export JAVA_HOME=/usr/lib/jvm/java-6-sun/
+
+
+shaun@debian:~/ec2-api-tools-1.6.7.4/bin$ ./ec2-version
+1.6.7.4 2013-02-01
+
+
+
+shaun@debian:~/ec2-api-tools-1.6.7.4/bin$ cp ~/Downloads/pk-ENJIYVS355C5QOTROXGIUELDAUVOHLX5.pem ~/.ssh/.
+shaun@debian:~/ec2-api-tools-1.6.7.4/bin$ cp ~/Downloads/cert-ENJIYVS355C5QOTROXGIUELDAUVOHLX5.pem ~/.ssh/.
+shaun@debian:~/ec2-api-tools-1.6.7.4/bin$ export EC2_PRIVATE_KEY=~/.ssh/pk-ENJIYVS355C5QOTROXGIUELDAUVOHLX5.pem
+shaun@debian:~/ec2-api-tools-1.6.7.4/bin$ export EC2_CERT=~/.ssh/cert-ENJIYVS355C5QOTROXGIUELDAUVOHLX5.pem
+
+
+
+shaun@debian:~/ec2-api-tools-1.6.7.4/bin$ ./ec2-describe-keypairs
+KEYPAIR	railsgame	...
+KEYPAIR	ced_lostnfound	...
+KEYPAIR	death	...
+KEYPAIR	feedeatGlobal	...
+KEYPAIR	lostnfound	...
+KEYPAIR	phone	...
+KEYPAIR	unlock	...
+KEYPAIR	ghost	...
+
+
+shaun@debian:~/ec2-api-tools-1.6.7.4/bin$ ./ec2-run-instances ami-d0f89fb9 -n 1 -t t1.micro -z us-east-1d -g 'overlords' -k 'railsgame'
+RESERVATION	r-7b1e1a10	142366733020	overlords
+INSTANCE	i-5556db3a	ami-d0f89fb9			pending	railsgame	0		t1.micro	2013-07-01T13:44:13+0000	us-east-1d	aki-88aa75e1			monitoring-disabled					ebs					paravirtual	xen		sg-9bdecff3	default	false	
+
+
+
+
+shaun@debian:~/ec2-api-tools-1.6.7.4/bin$ ./ec2-describe-instances
+RESERVATION	r-241fca4c	142366733020	quicklaunch-1,feedeat,users,default,overlords
+INSTANCE	i-649ced0e	ami-c30360aa	ec2-50-17-73-11.compute-1.amazonaws.com	ip-10-196-63-124.ec2.internal	running	railsgame	0		t1.micro	2013-05-27T23:31:08+0000	us-east-1d	aki-88aa75e1			monitoring-disabled	50.17.73.11	10.196.63.124			ebs	paravirtual	xen	QrRJq1369697467163	sg-5726dd3c, sg-424bbb29, sg-c9c5d4a1, sg-9bd15cf3, sg-9bdecff3	default	false	
+BLOCKDEVICE	/dev/sda1	vol-e4cf30bf	2013-05-27T23:31:12.000Z	true		
+TAG	instance	i-649ced0e	Name	taskgraph
+RESERVATION	r-7b192c13	142366733020	quicklaunch-1,feedeat,users,default,overlords
+INSTANCE	i-c1ce2ca9	ami-d0f89fb9	ec2-54-224-190-222.compute-1.amazonaws.com	domU-12-31-39-03-2D-89.compute-1.internal	running	railsgame	0t1.micro	2013-06-22T00:25:43+0000	us-east-1c	aki-88aa75e1			monitoring-disabled	54.224.190.222	10.249.46.119			ebs					paravirtual	xen	STmkB1371860743291	sg-5726dd3c, sg-424bbb29, sg-c9c5d4a1, sg-9bd15cf3, sg-9bdecff3	default	false	
+BLOCKDEVICE	/dev/sda1	vol-74cd762e	2013-06-22T00:25:46.000Z	true		
+TAG	instance	i-c1ce2ca9	Name	startupEngineering
+RESERVATION	r-9cb373f7	142366733020	feedeat,users,default,overlords
+INSTANCE	i-30d1f15b	ami-d0f89fb9	ec2-23-23-7-45.compute-1.amazonaws.com	ip-10-80-122-170.ec2.internal	running	railsgame	0		t1.micro	2013-06-08T16:28:33+0000	us-east-1d	aki-88aa75e1			monitoring-disabled	23.23.7.45	10.80.122.170			ebs	paravirtual	xen	Wvmbk1370708912632	sg-424bbb29, sg-c9c5d4a1, sg-9bd15cf3, sg-9bdecff3	default	false	
+BLOCKDEVICE	/dev/sda1	vol-804e17db	2013-06-08T16:28:36.000Z	true		
+TAG	instance	i-30d1f15b	Name	battlehackbridge
+RESERVATION	r-3f4c3d54	142366733020	quicklaunch-1,feedeat,users,default,overlords
+INSTANCE	i-c32410ac	ami-d0f89fb9	ec2-54-235-58-129.compute-1.amazonaws.com	ip-10-154-191-106.ec2.internal	running	railsgame	0		t1.micro	2013-06-22T11:47:20+0000	us-east-1d	aki-88aa75e1			monitoring-disabled	54.235.58.129	10.154.191.106			ebs	paravirtual	xen	TMTqY1371901639824	sg-5726dd3c, sg-424bbb29, sg-c9c5d4a1, sg-9bd15cf3, sg-9bdecff3	default	false	
+BLOCKDEVICE	/dev/sda1	vol-ef9116b5	2013-06-22T11:47:23.000Z	true		
+TAG	instance	i-c32410ac	Name	selfstarter
+RESERVATION	r-7b1e1a10	142366733020	overlords
+INSTANCE	i-5556db3a	ami-d0f89fb9	ec2-23-22-154-21.compute-1.amazonaws.com	ip-10-164-0-15.ec2.internal	running	railsgame	0		t1.micro	2013-07-01T13:44:13+0000	us-east-1d	aki-88aa75e1			monitoring-disabled	23.22.154.21	10.164.0.15			ebs	paravirtual	xen		sg-9bdecff3	default	false	
+BLOCKDEVICE	/dev/sda1	vol-83341bd9	2013-07-01T13:44:16.000Z	true		
+RESERVATION	r-a7c78dca	142366733020	quicklaunch-1,Neo4j,feedeat,users,default,Etherpad Lite - Real-time document collaboration by TurnKey Linux-12-AutogenByAWSMP-,overlords
+INSTANCE	i-1a1e5172	ami-d0f89fb9	ec2-54-224-62-172.compute-1.amazonaws.com	ip-10-194-25-245.ec2.internal	running	keyz	0		t1.micro	2013-07-01T13:55:07+0000	us-east-1d	aki-88aa75e1			monitoring-disabled	54.224.62.172	10.194.25.245			ebs	paravirtual	xen	wBAOI1372686906593	sg-5726dd3c, sg-ed6fb886, sg-424bbb29, sg-c9c5d4a1, sg-9bd15cf3, sg-0dc53d66, sg-9bdecff3	default	false	
+BLOCKDEVICE	/dev/sda1	vol-b01e31ea	2013-07-01T13:55:12.000Z	true		
+TAG	instance	i-1a1e5172	Name	some
+RESERVATION	r-5271e13e	142366733020	quicklaunch-1,feedeat,users,default,overlords
+INSTANCE	i-af746cc2	ami-7539b41c	ec2-174-129-181-99.compute-1.amazonaws.com	ip-10-112-78-207.ec2.internal	running	railsgame	0		t1.micro	2013-05-04T23:54:44+0000	us-east-1d	aki-825ea7eb			monitoring-disabled	174.129.181.99	10.112.78.207			ebs	paravirtual	xen	hPaKd1367711683600	sg-5726dd3c, sg-424bbb29, sg-c9c5d4a1, sg-9bd15cf3, sg-9bdecff3	default	false	
+BLOCKDEVICE	/dev/sda1	vol-eef409b6	2013-05-04T23:54:48.000Z	true		
+TAG	instance	i-af746cc2	Name	mathgraph
+TAG	instance	i-af746cc2	mathgraph	
+RESERVATION	r-f849ff97	142366733020	quicklaunch-1
+INSTANCE	i-3ec6e155	ami-d0f89fb9	ec2-54-226-95-46.compute-1.amazonaws.com	ip-10-164-10-57.ec2.internal	running	railsgame	0		t1.micro	2013-06-22T11:40:08+0000	us-east-1d	aki-88aa75e1			monitoring-disabled	54.226.95.46	10.164.10.57			ebs	paravirtual	xen	cPjEL1371901208124	sg-5726dd3c	default	false	
+BLOCKDEVICE	/dev/sda1	vol-e88a0db2	2013-06-22T11:40:12.000Z	true		
+TAG	instance	i-3ec6e155	Name	chefMaster
+RESERVATION	r-206a1b4f	142366733020	Neo4j
+INSTANCE	i-78e1a01d	ami-d0f89fb9			stopped	railsgame	0		m1.large	2013-06-08T16:59:54+0000	us-east-1d	aki-88aa75e1			monitoring-disabled					ebs					paravirtual	xen	VEuNO1370710793883	sg-ed6fb886	default	false	
+BLOCKDEVICE	/dev/sda1	vol-468dd41d	2013-06-08T16:59:59.000Z	true		
+BLOCKDEVICE	/dev/sdc	vol-788dd423	2013-06-08T16:59:59.000Z	false		
+TAG	instance	i-78e1a01d	MegaBattleHack	
+TAG	instance	i-78e1a01d	Name	megabattlehack
+RESERVATION	r-3a82c855	142366733020	feedeat,users,default,overlords
+INSTANCE	i-ecf7ac80	ami-d0f89fb9	ec2-54-225-55-92.compute-1.amazonaws.com	ip-10-164-4-50.ec2.internal	running	unlock	0		t1.micro	2013-07-01T12:41:26+0000	us-east-1d	aki-88aa75e1			monitoring-disabled	54.225.55.92	10.164.4.50			ebs	paravirtual	xen	rmqdi1372682485910	sg-424bbb29, sg-c9c5d4a1, sg-9bd15cf3, sg-9bdecff3	default	false	
+BLOCKDEVICE	/dev/sda1	vol-40a8841a	2013-07-01T12:41:30.000Z	true		
+TAG	instance	i-ecf7ac80	Name	house
+RESERVATION	r-57728d39	142366733020	feedeat,users,overlords
+INSTANCE	i-6bc9e509	ami-7539b41c	ec2-54-234-248-21.compute-1.amazonaws.com	ip-10-245-70-50.ec2.internal	running	feedeatGlobal	0		t1.micro	2013-04-15T15:35:03+0000	us-east-1d	aki-825ea7eb			monitoring-disabled	54.234.248.21	10.245.70.50			ebs	paravirtual	xen	SIJuR1366040102688	sg-424bbb29, sg-c9c5d4a1, sg-9bdecff3	default	false	
+BLOCKDEVICE	/dev/sda1	vol-b714cdee	2013-04-15T15:35:07.000Z	true		
+TAG	instance	i-6bc9e509	Name	feedeat
+RESERVATION	r-c08840a1	142366733020	Neo4j,feedeat,users,default,overlords
+INSTANCE	i-887222e6	ami-d0f89fb9	ec2-54-226-232-39.compute-1.amazonaws.com	ip-10-204-49-149.ec2.internal	running	railsgame	0		t1.micro	2013-06-09T03:44:38+0000	us-east-1d	aki-88aa75e1			monitoring-disabled	54.226.232.39	10.204.49.149			ebs	paravirtual	xen	gipoZ1370749478087	sg-ed6fb886, sg-424bbb29, sg-c9c5d4a1, sg-9bd15cf3, sg-9bdecff3	default	false	
+BLOCKDEVICE	/dev/sda1	vol-fda481a6	2013-06-09T03:44:42.000Z	true		
+TAG	instance	i-887222e6	Name	jockey
+RESERVATION	r-c129efa1	142366733020	feedeat,users,default,overlords
+INSTANCE	i-0057d761	ami-c30360aa	ec2-54-224-246-56.compute-1.amazonaws.com	domU-12-31-39-09-D5-6E.compute-1.internal	running	railsgame	0t1.micro	2013-05-21T16:27:34+0000	us-east-1c	aki-88aa75e1			monitoring-disabled	54.224.246.56	10.210.218.156			ebs					paravirtual	xen	RVcTk1369153654362	sg-424bbb29, sg-c9c5d4a1, sg-9bd15cf3, sg-9bdecff3	default	false	
+BLOCKDEVICE	/dev/sda1	vol-e583b3bd	2013-05-21T16:27:39.000Z	true		
+TAG	instance	i-0057d761	Name	ogmaglove
+RESERVATION	r-91947deb	142366733020	overlords
+INSTANCE	i-2818fa5b	ami-3fec7956	ec2-23-20-110-130.compute-1.amazonaws.com	ip-10-195-114-227.ec2.internal	running	lostnfound	0		t1.micro	2013-02-16T10:33:10+0000	us-east-1d	aki-88aa75e1			monitoring-disabled	23.20.110.130	10.195.114.227			ebs	paravirtual	xen	mgcuY1361010789556	sg-9bdecff3	default	false	
+BLOCKDEVICE	/dev/sda1	vol-70d78001	2013-02-16T10:33:15.000Z	true		
+TAG	instance	i-2818fa5b	lostnfound	simplicity
+TAG	instance	i-2818fa5b	Name	lostnfound
+
+

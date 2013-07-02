@@ -1,0 +1,11 @@
+mkdir ~/.ssh
+cp ~/Downloads/skey.pem ~/.ssh/
+sudo chmod 400 ~/.ssh/skey.pem
+sudo chmod 700 ~/.ssh
+nano ~/.ssh.config
+"""
+Host awshost1
+HostName ec2-54-35...amazonaws.com
+User ubuntu
+IdentityFile "~/.ssh/skey.pem"
+"""

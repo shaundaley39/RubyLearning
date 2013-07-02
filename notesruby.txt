@@ -1,0 +1,17 @@
+Most interesting parts from Pragmatic Programmers Programming Ruby
+
+Unit testing - awesome!
+inject - a cool way of processing arrays & blocks (par passing up the chain)
+Dynamic Blocks/ proc (108) for closure like things
+Command Expansion (111) for passing operating system commands and receiving return
+Conditional Execution (118) especially for appending to a hash from keys to arrays
+Exceptions - burry in this stuff
+Mixins - best application is in defining interfaces
+Mixin Variable Hashing (144) - for instance specific states without variable clashing
+// fear point: methods hierarchy is class > mixin > superclass > superclass mixins. So any internal method in a mixin should have a name that won't be accidentally overwritten in an including class
+Internet Stuff (222)
+
+
+Looks Cool!!!
+
+Sockets for networking (740)
